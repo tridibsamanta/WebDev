@@ -1,2 +1,3 @@
-# WebDev
-The journey to web development
+# Web Development
+
+***The journey to web development***
