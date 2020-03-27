@@ -7,3 +7,4 @@
 - [x] Styles
 - [x] Text formatting
 - [x] Quotation Citation
+- [x] Comments
