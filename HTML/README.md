@@ -1,4 +1,4 @@
-***The HTML files for the following sections are present -***  
+***The HTML files for the following are present in this repo.-***  
 
 - [x] First page
 - [x] Headings
