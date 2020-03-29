@@ -1,0 +1,76 @@
+<!--
+	Author : Tridib Samanta
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			background-color: powderblue;
+		}
+		h1 {
+			color: yellow;
+			font-family: verdana;
+			font-size: 300%;
+		}
+		p {
+			color: red;
+			font-family: courier;
+			font-size: 160%;
+			border: 2px solid tomato;
+			padding: 30px;
+			margin: 100px;
+		} 
+		#p01 {
+			color: blue;
+			font-family: arial;
+			font-size: 200%;
+			border: 0px solid tomato;
+			padding: 0px;
+			margin: 0px;
+		}
+		p.error {
+			color: green;
+			border: 5px solid yellow;
+			padding: 0px;
+			margin: 50px;
+		}
+	</style>
+</head>
+<body>
+
+<!--
+	CSS stands for Cascading Style Sheets
+
+	CSS can be added to HTML elements in 3 ways:
+
+	1. Inline - by using the style attribute in HTML elements
+	2. Internal - by using a <style> element in the <head> section
+	3. External - by using an external CSS file
+-->
+
+<!--
+	Internal CSS
+
+	An internal CSS is used to define a style for a single HTML page.
+
+	An internal CSS is defined in the <head> section of an HTML page, within a <style> element.
+-->
+
+<h1>Heading</h1>
+
+<p>Paragraph</p>
+
+<!--
+	To define a specific style for one special element, add an id attribute to the element.
+
+	Then define a style for the element with the specific id.
+-->
+
+<p id="p01">I am an exception</p>
+
+<p class="error">Error ! Be safe.</p>
+
+</body>
+</html>
