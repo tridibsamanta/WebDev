@@ -1,0 +1,177 @@
+<!--
+	Author : Tridib Samanta
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                border-spacing: 5px;
+            }
+            th, td {
+                padding: 15px;
+            }
+            th {
+                text-align: left;
+            }
+            table#t01 {
+                width: 100%;
+                background-color: #f1f1c1;
+            }
+            table#t02 tr:nth-child(even) {
+                background-color: aquamarine;
+            }
+                table#t02 tr:nth-child(odd) {
+                background-color: lightcyan;
+            }
+            table#t02 th {
+                background-color: teal;
+                color: white;
+            }
+        </style>
+    </head>
+<body>
+
+<!--
+	An HTML table is defined with the <table> tag.
+
+    Each table row is defined with the <tr> tag. A table header is defined with the <th> tag. By default, table headings are bold and centered. A table data/cell is defined with the <td> tag.
+-->
+    
+    <h2>Tables</h2>
+    
+    <table style="width:100%";>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>Anderson</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Tim</td>
+            <td>Cookerson</td>
+            <td>30</td>
+        </tr>
+    </table>
+    
+    <!-- 
+    If you do not specify a border for the table, it will be displayed without borders.
+
+    A border is set using the CSS border property.
+    -->
+    
+    <!-- 
+    To make a cell span more than one column, use the colspan attribute.
+    -->
+    <br><br>
+    
+    <table style="width:100%">
+  <tr>
+    <th>Personal Details</th>
+    <th colspan="2">Contact No.</th>
+  </tr>
+  <tr>
+    <td>Tim Chef</td>
+    <td>8887775214</td>
+    <td>6668889587</td>
+  </tr>
+</table>
+    
+    <br><br>
+    
+    <!-- 
+    To make a cell span more than one row, use the rowspan attribute.
+    -->
+    
+    <table style="width:100%">
+        <tr>
+            <th>Name:</th>
+            <td>Bill Doors</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Contact No.</th>
+            <td>8887775214</td>
+        </tr>
+        <tr>
+            <td>6668889587</td>
+        </tr>
+    </table>
+    
+    <br><br>
+    
+    <!--
+    To add a caption to a table, use the <caption> tag:
+    -->
+    
+    <table style="width:100%">
+        <caption>Monthly savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>Rs. 10</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>Rs. 15</td>
+        </tr>
+    </table>
+    
+    <br><br>
+    
+    <!-- 
+    A Special Style for One Table
+
+    To define a special style for a special table, add an id attribute to the table.
+    -->
+    
+    <table id="t01">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Satya</td>
+            <td>Noddy</td>
+            <td>35</td>
+        </tr>
+    </table>
+    
+    <br><br>
+    
+    <table id="t02">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th> 
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Leonardo</td>
+            <td>Cruise</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Tom</td>
+            <td>DiCaprio</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>Johny</td>
+            <td>Deep</td>
+            <td>55</td>
+        </tr>
+    </table>
+    
+    
+</body>
+</html>
