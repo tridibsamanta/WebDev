@@ -1,0 +1,197 @@
+<!--
+	Author : Tridib Samanta
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<!--
+	Images can improve the design and apprearance of a web page.
+-->
+
+    
+    <h2>IMAGES</h2>
+    
+    <!--
+    In HTML, images are defined with the <img> tag.
+
+    The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+
+    The src attribute specifies the URL (web address) of the image.
+
+    The alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+
+    The value of the alt attribute should describe the image. If a browser cannot find an image, it will display the value of the alt attribute.
+
+    -->
+    
+    <img src="myimage.jpg" alt="My Image">
+    
+    <img src="myimage2.jpg" alt="My Image 2">
+    
+    <br>
+    
+    <!--
+    You can use the style attribute to specify the width and height of an image.
+
+    The width and height attributes always defines the width and height of the image in pixels.
+
+    However, we suggest using the style attribute. It prevents styles sheets from changing the size of images.
+    -->
+    
+    <img src="myimage.jpg" alt="My Image" style="width: 400px; height: 400px;">
+    
+    <img src="myimage2.jpg" alt="My Image 2" width="400" height="400">
+    
+    <!--
+    If not specified, the browser expects to find the image in the same folder as the web page.
+
+    However, it is common to store images in a sub-folder. You must then include the folder name in the src attribute.
+    -->
+    
+    <img src="/folder_name/image_name.jpg" alt="My Image" style="width:128px;height:128px;">
+    
+    <br>
+    
+    <!--
+    Some web sites store their images on image servers.
+
+    Actually, you can access images from any web address in the world.
+    -->
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/240px-HTML5_logo_and_wordmark.svg.png" alt="HTML 5 LOGO">
+    
+    <!--
+    HTML allows animated GIF's.
+    -->
+    
+    <!--
+    To use an image as a link, put the <img> tag inside the <a> tag:
+    -->
+    
+    <a href="https://en.wikipedia.org/wiki/HTML5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/240px-HTML5_logo_and_wordmark.svg.png" alt="HTML 5 LOGO" alt="" style="width: 100px; height: 100px; border: 0;">
+    </a>
+    
+    <br>
+    
+    <!--
+    Use the CSS float property to let the image float to the right or to the left of a text.
+    -->
+    
+    <p>
+        <img src="myimage.jpg" alt="My Image" style="float:right;width:100px;height:100px;">
+        The image will float to the right of the text.
+    </p>
+    
+    <br><br>
+
+    <p>
+        <img src="myimage2.jpg" alt="My Image" style="float:left;width:100px;height:100px;">
+        The image will float to the left of the text.
+    </p>
+
+    <br><br><br><br>
+    
+    <!--
+    Loading images takes time. Large images can slow down your page. Use images carefully.
+    -->
+    
+    <!-- 
+    Image Maps
+
+    The idea behind an image map is that you should be able to perform different actions depending on where in the image you click.
+
+    To create an image map you need an image, and a map containing some rules that describe the clickable areas.
+
+    The image is inserted using the <img> tag. The only difference from other images is that you must add a usemap attribute.
+
+    The usemap value starts with a hash tag # followed by the name of the image map, and is used to create a relationship between the image and the image map.
+    
+    Then add a <map> element.
+
+    The <map> element is used to create an image map, and is linked to the image by using the name attribute.The name attribute must have the same value as the usemap attribute.
+
+    Then add the clickable areas.A clickable area is defined using an <area> element.
+
+    You must define the shape of the area, and you can choose one of these values:
+    rect - defines a rectangular region
+    circle - defines a circular region
+    poly - defines a polygonal region
+    default - defines the entire region
+
+    You must define some coordinates to be able to place the clickable area onto the image.
+
+    The coordinates come in pairs, one for the x-axis and one for the y-axis.
+    -->
+    
+    <p>Click on the cups to know more about it's contents !</p>
+    
+    <img src="image_map.jpg" alt="Image Map" usemap="#sample_map">
+    
+    <map name="sample_map">
+        <area shape="circle" coords="85, 215, 40" alt="A Cup of coffee" href="https://en.wikipedia.org/wiki/Coffee">
+        <area shape="rect" coords="135,175,190,250" alt="A glass of iced tea" href="https://en.wikipedia.org/wiki/Iced_tea">
+        <area shape="rect" coords="200,165,255,250" alt="A glass of Caffè mocha" href="https://en.wikipedia.org/wiki/Caff%C3%A8_mocha">
+        <area shape="rect" coords="270,150,320,250" alt="A glass of Smoothie" href="https://en.wikipedia.org/wiki/Smoothie">
+    </map>
+    
+    <br><br>
+    
+    <!--
+    Image Map and JavaScript
+
+    A clickable area does not have to be a link to another page, it can also trigger a JavaScript function.
+
+    Add a click event on the <area> element to execute a JavaScript function.
+    -->
+    
+    <p>Place the cursor over the cups to know more about it's contents !</p>
+    
+    <img src="image_map.jpg" alt="Image Map 2" usemap="#sample_map2">
+    
+    <map name="sample_map2">
+        <area shape="circle" coords="85, 215, 40" onmouseover="myFunction1()">
+        <area shape="rect" coords="135,175,190,250" onmouseover="myFunction2()">
+        <area shape="rect" coords="200,165,255,250" onmouseover="myFunction3()">
+        <area shape="rect" coords="270,150,320,250" onmouseover="myFunction4()">
+    </map>
+    
+    <script>
+        function myFunction1() {
+            alert("A Cup of coffee !");
+        }
+        function myFunction2() {
+            alert("A glass of iced tea !");
+        }
+        function myFunction3() {
+            alert("A glass of Caffè mocha !");
+        }
+        function myFunction4() {
+            alert("A glass of Smoothie !");
+        }
+    </script>
+    
+    <!--
+    HTML5 introduced the <picture> element to add more flexibility when specifying image resources.
+
+    The <picture> element contains a number of <source> elements, each referring to different image sources. This way the browser can choose the image that best fits the current view and/or device.
+
+    Each <source> element have attributes describing when their image is the most suitable.
+    
+    <picture>
+        <source media="(min-width: 650px)" srcset="myimage1.jpg">
+        <source media="(min-width: 465px)" srcset="myimage2.jpg">
+        <img src="myimage.jpg">
+    </picture>
+
+    <picture>
+        <source srcset="myimage.png">
+        <source srcset="myimage1.jpg">
+        <img src="myimage2" alt="My Image" style="width:auto;">
+    </picture>
+    -->
+    
+</body>
+</html>
