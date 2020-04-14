@@ -20,4 +20,4 @@
 - [x] Lists
 - [x] Block and Inline elements
 
-***Aditional files :*** myimage.jpg, myimage2.jpg, image_map.jpg 
+***Additional files :*** myimage.jpg, myimage2.jpg, image_map.jpg 
