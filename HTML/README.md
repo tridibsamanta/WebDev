@@ -3,7 +3,7 @@
 ***The files for the following topics are present in this repo.-***  
 
 - [x] [First page](https://github.com/tridibsamanta/WebDev/blob/master/HTML/FirstPage.html)
-- [x] Headings
+- [x] [Headings](https://github.com/tridibsamanta/WebDev/blob/master/HTML/Headings.html)
 - [x] Paragraphs
 - [x] Tooltip
 - [x] Styles
