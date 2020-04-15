@@ -4,7 +4,7 @@
 
 - [x] [First page](https://github.com/tridibsamanta/WebDev/blob/master/HTML/FirstPage.html)
 - [x] [Headings](https://github.com/tridibsamanta/WebDev/blob/master/HTML/Headings.html)
-- [x] Paragraphs
+- [x] [Paragraphs](https://github.com/tridibsamanta/WebDev/blob/master/HTML/Paragraphs.html)
 - [x] Tooltip
 - [x] Styles
 - [x] Text formatting
