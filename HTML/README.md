@@ -8,7 +8,7 @@
 - [x] [Tooltip](https://github.com/tridibsamanta/WebDev/blob/master/HTML/Tooltip.html)
 - [x] [Styles](https://github.com/tridibsamanta/WebDev/blob/master/HTML/Styles.html)
 - [x] [Text formatting](https://github.com/tridibsamanta/WebDev/blob/master/HTML/TextFormatting.html)
-- [x] Quotation Citation
+- [x] [Quotation Citation](https://github.com/tridibsamanta/WebDev/blob/master/HTML/QuotationCitation.html)
 - [x] Comments
 - [x] Colors
 - [x] HTML with Inline CSS
