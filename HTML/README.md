@@ -6,7 +6,7 @@
 - [x] [Headings](https://github.com/tridibsamanta/WebDev/blob/master/HTML/Headings.html)
 - [x] [Paragraphs](https://github.com/tridibsamanta/WebDev/blob/master/HTML/Paragraphs.html)
 - [x] [Tooltip](https://github.com/tridibsamanta/WebDev/blob/master/HTML/Tooltip.html)
-- [x] Styles
+- [x] [Styles](https://github.com/tridibsamanta/WebDev/blob/master/HTML/Styles.html)
 - [x] Text formatting
 - [x] Quotation Citation
 - [x] Comments
